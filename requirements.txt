@@ -1,1 +1,5 @@
 streamlit
+pdfplumber
+python-docx
+requests
+google-generativeai
