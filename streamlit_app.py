@@ -10,6 +10,7 @@ st.set_page_config(page_title="Auto AI Job Applier", page_icon="💼", layout="w
 
 # Set up your Gemini API Key securely (You will add this in Streamlit secrets later)
 API_KEY = st.secrets.get("GEMINI_API_KEY", "YOUR_LOCAL_API_KEY")
+st.warning(f"DEBUG: My API Key starts with... {API_KEY[:5]}")
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel('gemini-1.5-flash')
 
